@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		901F9E1823EDB5D20037D34A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E1723EDB5D20037D34A /* AppDelegate.swift */; };
+		901F9E1A23EDB5D20037D34A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E1923EDB5D20037D34A /* SceneDelegate.swift */; };
+		901F9E1D23EDB5D20037D34A /* MetUIApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E1B23EDB5D20037D34A /* MetUIApp.xcdatamodeld */; };
+		901F9E1F23EDB5D20037D34A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E1E23EDB5D20037D34A /* ContentView.swift */; };
+		901F9E2123EDB5D40037D34A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901F9E2023EDB5D40037D34A /* Assets.xcassets */; };
+		901F9E2423EDB5D40037D34A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901F9E2323EDB5D40037D34A /* Preview Assets.xcassets */; };
+		901F9E2723EDB5D40037D34A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901F9E2523EDB5D40037D34A /* LaunchScreen.storyboard */; };
+		901F9E3123EDB6210037D34A /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3023EDB6210037D34A /* Webservice.swift */; };
+		901F9E3323EDB9630037D34A /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3223EDB9630037D34A /* Object.swift */; };
+		901F9E3523EDBBEB0037D34A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3423EDBBEB0037D34A /* AppError.swift */; };
+		901F9E3723EDBC110037D34A /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3623EDBC110037D34A /* NetworkHelper.swift */; };
+		901F9E3B23EDBCAF0037D34A /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3A23EDBCAF0037D34A /* ImageClient.swift */; };
+		901F9E3E23EDE9B90037D34A /* DepartmentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3D23EDE9B90037D34A /* DepartmentListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		901F9E1423EDB5D20037D34A /* MetUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		901F9E1723EDB5D20037D34A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		901F9E1923EDB5D20037D34A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		901F9E1C23EDB5D20037D34A /* MetUIApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetUIApp.xcdatamodel; sourceTree = "<group>"; };
+		901F9E1E23EDB5D20037D34A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		901F9E2023EDB5D40037D34A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		901F9E2323EDB5D40037D34A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		901F9E2623EDB5D40037D34A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		901F9E2823EDB5D40037D34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901F9E3023EDB6210037D34A /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		901F9E3223EDB9630037D34A /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		901F9E3423EDBBEB0037D34A /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		901F9E3623EDBC110037D34A /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		901F9E3A23EDBCAF0037D34A /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
+		901F9E3D23EDE9B90037D34A /* DepartmentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		901F9E1123EDB5D20037D34A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		901F9E0B23EDB5D20037D34A = {
+			isa = PBXGroup;
+			children = (
+				901F9E1623EDB5D20037D34A /* MetUIApp */,
+				901F9E1523EDB5D20037D34A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		901F9E1523EDB5D20037D34A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				901F9E1423EDB5D20037D34A /* MetUIApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		901F9E1623EDB5D20037D34A /* MetUIApp */ = {
+			isa = PBXGroup;
+			children = (
+				901F9E3C23EDE9990037D34A /* ViewModels */,
+				901F9E2F23EDB5FE0037D34A /* Services */,
+				901F9E2E23EDB5F50037D34A /* Models */,
+				901F9E1723EDB5D20037D34A /* AppDelegate.swift */,
+				901F9E1923EDB5D20037D34A /* SceneDelegate.swift */,
+				901F9E1E23EDB5D20037D34A /* ContentView.swift */,
+				901F9E2023EDB5D40037D34A /* Assets.xcassets */,
+				901F9E2523EDB5D40037D34A /* LaunchScreen.storyboard */,
+				901F9E2823EDB5D40037D34A /* Info.plist */,
+				901F9E1B23EDB5D20037D34A /* MetUIApp.xcdatamodeld */,
+				901F9E2223EDB5D40037D34A /* Preview Content */,
+			);
+			path = MetUIApp;
+			sourceTree = "<group>";
+		};
+		901F9E2223EDB5D40037D34A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				901F9E2323EDB5D40037D34A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		901F9E2E23EDB5F50037D34A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				901F9E3223EDB9630037D34A /* Object.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		901F9E2F23EDB5FE0037D34A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				901F9E3023EDB6210037D34A /* Webservice.swift */,
+				901F9E3423EDBBEB0037D34A /* AppError.swift */,
+				901F9E3623EDBC110037D34A /* NetworkHelper.swift */,
+				901F9E3A23EDBCAF0037D34A /* ImageClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		901F9E3C23EDE9990037D34A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				901F9E3D23EDE9B90037D34A /* DepartmentListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		901F9E1323EDB5D20037D34A /* MetUIApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901F9E2B23EDB5D40037D34A /* Build configuration list for PBXNativeTarget "MetUIApp" */;
+			buildPhases = (
+				901F9E1023EDB5D20037D34A /* Sources */,
+				901F9E1123EDB5D20037D34A /* Frameworks */,
+				901F9E1223EDB5D20037D34A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetUIApp;
+			productName = MetUIApp;
+			productReference = 901F9E1423EDB5D20037D34A /* MetUIApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		901F9E0C23EDB5D20037D34A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Stephanie Ramirez";
+				TargetAttributes = {
+					901F9E1323EDB5D20037D34A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 901F9E0F23EDB5D20037D34A /* Build configuration list for PBXProject "MetUIApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 901F9E0B23EDB5D20037D34A;
+			productRefGroup = 901F9E1523EDB5D20037D34A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				901F9E1323EDB5D20037D34A /* MetUIApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		901F9E1223EDB5D20037D34A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901F9E2723EDB5D40037D34A /* LaunchScreen.storyboard in Resources */,
+				901F9E2423EDB5D40037D34A /* Preview Assets.xcassets in Resources */,
+				901F9E2123EDB5D40037D34A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		901F9E1023EDB5D20037D34A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901F9E3723EDBC110037D34A /* NetworkHelper.swift in Sources */,
+				901F9E1D23EDB5D20037D34A /* MetUIApp.xcdatamodeld in Sources */,
+				901F9E1823EDB5D20037D34A /* AppDelegate.swift in Sources */,
+				901F9E1F23EDB5D20037D34A /* ContentView.swift in Sources */,
+				901F9E3123EDB6210037D34A /* Webservice.swift in Sources */,
+				901F9E3323EDB9630037D34A /* Object.swift in Sources */,
+				901F9E3B23EDBCAF0037D34A /* ImageClient.swift in Sources */,
+				901F9E1A23EDB5D20037D34A /* SceneDelegate.swift in Sources */,
+				901F9E3E23EDE9B90037D34A /* DepartmentListViewModel.swift in Sources */,
+				901F9E3523EDBBEB0037D34A /* AppError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		901F9E2523EDB5D40037D34A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901F9E2623EDB5D40037D34A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		901F9E2923EDB5D40037D34A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		901F9E2A23EDB5D40037D34A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		901F9E2C23EDB5D40037D34A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MetUIApp/Preview Content\"";
+				DEVELOPMENT_TEAM = FSUP887MQU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MetUIApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Fueled.MetUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		901F9E2D23EDB5D40037D34A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MetUIApp/Preview Content\"";
+				DEVELOPMENT_TEAM = FSUP887MQU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MetUIApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Fueled.MetUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		901F9E0F23EDB5D20037D34A /* Build configuration list for PBXProject "MetUIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901F9E2923EDB5D40037D34A /* Debug */,
+				901F9E2A23EDB5D40037D34A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901F9E2B23EDB5D40037D34A /* Build configuration list for PBXNativeTarget "MetUIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901F9E2C23EDB5D40037D34A /* Debug */,
+				901F9E2D23EDB5D40037D34A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		901F9E1B23EDB5D20037D34A /* MetUIApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				901F9E1C23EDB5D20037D34A /* MetUIApp.xcdatamodel */,
+			);
+			currentVersion = 901F9E1C23EDB5D20037D34A /* MetUIApp.xcdatamodel */;
+			path = MetUIApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 901F9E0C23EDB5D20037D34A /* Project object */;
+}
