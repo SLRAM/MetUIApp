@@ -21,7 +21,9 @@
 		901F9E3B23EDBCAF0037D34A /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3A23EDBCAF0037D34A /* ImageClient.swift */; };
 		901F9E3E23EDE9B90037D34A /* DepartmentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3D23EDE9B90037D34A /* DepartmentListViewModel.swift */; };
 		901F9E4023EDF2920037D34A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E3F23EDF2920037D34A /* DetailView.swift */; };
-		901F9E4223EDF5DB0037D34A /* ObjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E4123EDF5DB0037D34A /* ObjectListViewModel.swift */; };
+		901F9E4223EDF5DB0037D34A /* DetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F9E4123EDF5DB0037D34A /* DetailListViewModel.swift */; };
+		90E445AF23F34E0700B6613C /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E445AE23F34E0700B6613C /* ObjectView.swift */; };
+		90E445B123F34E4B00B6613C /* ObjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E445B023F34E4B00B6613C /* ObjectListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +43,9 @@
 		901F9E3A23EDBCAF0037D34A /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
 		901F9E3D23EDE9B90037D34A /* DepartmentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentListViewModel.swift; sourceTree = "<group>"; };
 		901F9E3F23EDF2920037D34A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		901F9E4123EDF5DB0037D34A /* ObjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectListViewModel.swift; sourceTree = "<group>"; };
+		901F9E4123EDF5DB0037D34A /* DetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewModel.swift; sourceTree = "<group>"; };
+		90E445AE23F34E0700B6613C /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
+		90E445B023F34E4B00B6613C /* ObjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				901F9E1923EDB5D20037D34A /* SceneDelegate.swift */,
 				901F9E1E23EDB5D20037D34A /* ContentView.swift */,
 				901F9E3F23EDF2920037D34A /* DetailView.swift */,
+				90E445AE23F34E0700B6613C /* ObjectView.swift */,
 				901F9E2023EDB5D40037D34A /* Assets.xcassets */,
 				901F9E2523EDB5D40037D34A /* LaunchScreen.storyboard */,
 				901F9E2823EDB5D40037D34A /* Info.plist */,
@@ -121,7 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				901F9E3D23EDE9B90037D34A /* DepartmentListViewModel.swift */,
-				901F9E4123EDF5DB0037D34A /* ObjectListViewModel.swift */,
+				901F9E4123EDF5DB0037D34A /* DetailListViewModel.swift */,
+				90E445B023F34E4B00B6613C /* ObjectListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -202,11 +208,13 @@
 				901F9E1823EDB5D20037D34A /* AppDelegate.swift in Sources */,
 				901F9E1F23EDB5D20037D34A /* ContentView.swift in Sources */,
 				901F9E3123EDB6210037D34A /* Webservice.swift in Sources */,
+				90E445B123F34E4B00B6613C /* ObjectListViewModel.swift in Sources */,
 				901F9E4023EDF2920037D34A /* DetailView.swift in Sources */,
 				901F9E3323EDB9630037D34A /* Object.swift in Sources */,
-				901F9E4223EDF5DB0037D34A /* ObjectListViewModel.swift in Sources */,
+				901F9E4223EDF5DB0037D34A /* DetailListViewModel.swift in Sources */,
 				901F9E3B23EDBCAF0037D34A /* ImageClient.swift in Sources */,
 				901F9E1A23EDB5D20037D34A /* SceneDelegate.swift in Sources */,
+				90E445AF23F34E0700B6613C /* ObjectView.swift in Sources */,
 				901F9E3E23EDE9B90037D34A /* DepartmentListViewModel.swift in Sources */,
 				901F9E3523EDBBEB0037D34A /* AppError.swift in Sources */,
 			);

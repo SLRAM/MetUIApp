@@ -7,6 +7,15 @@
 //
 
 import Foundation
+import Combine
+
+struct StaticDepartment {
+
+	static var id: Int = 1
+}
+class SelectedDepartment: ObservableObject {
+	@Published var department = Department.default
+}
 struct Departments: Codable {
 	let departments: [Department]
 }
@@ -14,12 +23,17 @@ struct Department: Codable, Hashable {
 	let departmentId: Int
 	let displayName: String
 }
+extension Department {
+	static var `default`: Department {
+		Department(departmentId: 1, displayName: "default")
+	}
+}
 struct ObjectIDs: Codable { //can be used for search and object endpoints
     let total: Int?
     let objectIDs: [Int]
 }
 
-struct ObjectData: Codable {
+struct ObjectData: Codable, Hashable {
     let objectID: Int
     let accessionNumber: String
     let isPublicDomain: Bool
@@ -63,4 +77,9 @@ struct ObjectData: Codable {
     let linkResource: String
     let repository: String
     let objectURL: URL
+}
+extension ObjectData {
+	static var `default`: ObjectData {
+		ObjectData(objectID: 0, accessionNumber: "", isPublicDomain: false, primaryImage: nil, primaryImageSmall: "", department: "", objectName: "Default", title: "default", culture: "", period: "", dynasty: "", reign: "", artistRole: "", artistPrefix: "", artistDisplayName: "", artistDisplayBio: "", artistSuffix: "", artistAlphaSort: "", artistNationality: "", artistBeginDate: "", artistEndDate: "", objectDate: "", objectBeginDate: 0, objectEndDate: 0, medium: "", dimensions: "", creditLine: "", geographyType: "", city: "", state: "", county: "", country: "", region: "", subregion: "", locale: "", locus: "", excavation: "", river: "", classification: "", rightsAndReproduction: "", linkResource: "", repository: "", objectURL: URL(string: "https://www.metmuseum.org/art/collection/search/471266")!)
+	}
 }

@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import Combine
 
 class Webservice {
-	
+	func combineGetDepartments() {
+		
+	}
 	func getDepartments(completionHandler: @escaping(AppError?, [Department]?) -> Void) {
 		let url = "https://collectionapi.metmuseum.org/public/collection/v1/departments"
 		NetworkHelper.shared.performDataTask(endpointURLString: url, httpMethod: "GET", httpBody: nil) { (error, data, response) in

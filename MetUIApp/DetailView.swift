@@ -7,17 +7,32 @@
 //
 
 import SwiftUI
-
 struct DetailView: View {
-  let object: String
-  var body: some View {
-    Text(object)
+	@ObservedObject var viewModel: DetailListViewModel
+	@EnvironmentObject var selectedDepartment: SelectedDepartment
+
+	init(viewModel: DetailListViewModel) {
+		self.viewModel = viewModel
+	}
+
+	var body: some View {
+	  NavigationView {
+		  List {
+			ForEach(viewModel.objects, id: \.self) { object in
+//				Text(String(object))
+				NavigationLink(destination: ObjectView(viewModel: ObjectListViewModel(selectedObject: object))) {
+					Text(String(object))
+				}
+			  }
+		  }
+		  .navigationBarTitle("ObjectIDs")
+	  }
   }
 }
 
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-		DetailView(object: "Object")
+		DetailView(viewModel: DetailListViewModel(selectedDepartment: Department.default))
     }
 }

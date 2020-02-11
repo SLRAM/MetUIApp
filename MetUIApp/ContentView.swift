@@ -12,12 +12,14 @@ import Combine
 struct ContentView: View {
 //add a searchbar that is available on all screens to search departments or art
 	@ObservedObject var model = DepartmentListViewModel()
+	@EnvironmentObject var selectedDepartment: SelectedDepartment
+
 
 	var body: some View {
 		NavigationView {
 			List {
 				ForEach(model.departments, id: \.self) { department in
-					NavigationLink(destination: DetailView(object: department.displayName)) {
+					NavigationLink(destination: DetailView(viewModel: DetailListViewModel(selectedDepartment: department))) {
 						Text(department.displayName)
 					}
 				}
